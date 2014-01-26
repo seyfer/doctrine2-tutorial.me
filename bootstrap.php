@@ -4,6 +4,9 @@
 use Doctrine\ORM\Tools\Setup;
 use Doctrine\ORM\EntityManager;
 
+error_reporting(E_ALL ^E_NOTICE);
+ini_set('display_errors', 1);
+
 require_once "vendor/autoload.php";
 
 // Create a simple "default" Doctrine ORM configuration for Annotations
